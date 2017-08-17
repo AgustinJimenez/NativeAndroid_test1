@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        DBHelper db_helper = new DBHelper( this, "some", null, 1 );
 
         et_nombre = (EditText) findViewById(R.id.et_nombre);
         et_apellido = (EditText) findViewById(R.id.et_apellido);
